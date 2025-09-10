@@ -2,7 +2,7 @@ TITLE="The Cursed Forest"
 
 STARTING="You are a wandering adventurer with a rusty sword, a small lantern, and a pouch with 3 gold coins. Legends speak of a cursed forest that hides a treasure guarded by something terrible. Tonight, you stand before its dark edge."
 
-level_no ={
+levels ={
 	"1" : "At the Forest’s Edge",
 	"2" : "The Whispering Path",
 	"3" : "The Old Hermit",
@@ -37,17 +37,31 @@ choices={
 	"8" : ("","")
 }
 
-choice_outputs{
+choice_outputs={
 	"1" : (2,3) 
 	"2" : (4,5) 
 	"3" : (6,2) 
 	"4" : (7) 
 	"5" : (7) 
-	"6" : (7) 
-	"7" : (8,9) 
+	"6" : (7)
+	"7" : (8,9)
 	"8" : () 
 
 }
+
+ends={
+1:"The beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!"
+2:"When you finally escape the forest, you open it… only to find nothing but ashes. The curse remains unbroken. The End."
+3:"The beast overpowers you. Darkness consumes you. The End."	
+}
+
+def start():
+	print(STARTING)
+	user=input()
+
+
+
+
 The trees loom tall and silent, their branches twisting like claws. A narrow path disappears into the shadows.
 
 If you enter the forest, go to Section 2.
@@ -100,6 +114,3 @@ If you didn’t take the herb, the beast overpowers you. Darkness consumes you. 
 Section 9 – The Trick
 
 You toss your lantern high, its flame flaring bright. The beast snarls and shields its eyes. You dash to the chest, grab it, and run.
-END1="When you finally escape the forest, you open it… only to find nothing but ashes. The curse remains unbroken. The End."
-END2="The beast overpowers you. Darkness consumes you. The End."
-END3=
