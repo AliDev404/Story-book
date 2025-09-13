@@ -62,55 +62,56 @@ def start():
 
 
 
-The trees loom tall and silent, their branches twisting like claws. A narrow path disappears into the shadows.
-
-If you enter the forest, go to Section 2.
-If you circle around the forest, go to Section 3.
-
-Section 2 – The Whispering Path
-
-As you walk, the lantern flickers. Voices whisper from the trees. Suddenly, a pair of glowing yellow eyes appear.
-It’s a wolf, blocking the path.
-
-If you fight the wolf, go to Section 4.
-If you offer it a gold coin, go to Section 5.
-
-Section 3 – The Old Hermit
-
-You find a crooked hut. An old hermit waves you closer. He says, “The forest hides what you seek, but beware the Shadow Beast.” He offers you a choice:
-
-If you accept his advice and take a healing herb, go to Section 6.
-If you ignore him and head back into the forest, go to Section 2.
-
-Section 4 – Battle with the Wolf
-
-You swing your sword. The wolf lunges. After a brief fight, you manage to wound it, but it scratches your arm. You lose some strength, yet the beast flees.
-You continue deeper. Go to Section 7.
-
-Section 5 – The Bargain
-
-You toss a coin onto the path. The wolf sniffs it, growls, then slinks away into the shadows. You’re safe, but poorer.
-Go to Section 7.
-
-Section 6 – The Healing Herb
-
-The herb restores your energy. Feeling stronger, you step into the forest.
-Go to Section 7.
-
-Section 7 – The Clearing
-
-The path opens to a moonlit clearing. At its center lies a stone altar, upon which rests a silver chest. But from the shadows rises the Shadow Beast, tall, horned, and wrapped in darkness.
-
-If you fight the Shadow Beast, go to Section 8.
-
-If you try to trick it and flee with the chest, go to Section 9.
-
-Section 8 – Final Battle
-
-The fight is fierce. If you took the hermit’s herb (Section 6), you strike with renewed strength and the beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!
-
-If you didn’t take the herb, the beast overpowers you. Darkness consumes you. The End.
-
-Section 9 – The Trick
-
-You toss your lantern high, its flame flaring bright. The beast snarls and shields its eyes. You dash to the chest, grab it, and run.
+#The trees loom tall and silent, their branches twisting like claws. A narrow path disappears into the shadows.
+#
+#If you enter the forest, go to Section 2.
+#If you circle around the forest, go to Section 3.
+#
+#Section 2 – The Whispering Path
+#
+#As you walk, the lantern flickers. Voices whisper from the trees. Suddenly, a pair of glowing yellow eyes appear.
+#It’s a wolf, blocking the path.
+#
+#If you fight the wolf, go to Section 4.
+#If you offer it a gold coin, go to Section 5.
+#
+#Section 3 – The Old Hermit
+#
+#You find a crooked hut. An old hermit waves you closer. He says, “The forest hides what you seek, but beware the Shadow Beast.” He offers you a choice:
+#
+#If you accept his advice and take a healing herb, go to Section 6.
+#If you ignore him and head back into the forest, go to Section 2.
+#
+#Section 4 – Battle with the Wolf
+#
+#You swing your sword. The wolf lunges. After a brief fight, you manage to wound it, but it scratches your arm. You lose some strength, yet the beast flees.
+#You continue deeper. Go to Section 7.
+#
+#Section 5 – The Bargain
+#
+#You toss a coin onto the path. The wolf sniffs it, growls, then slinks away into the shadows. You’re safe, but poorer.
+#Go to Section 7.
+#
+#Section 6 – The Healing Herb
+#
+#The herb restores your energy. Feeling stronger, you step into the forest.
+#Go to Section 7.
+#
+#Section 7 – The Clearing
+#
+#The path opens to a moonlit clearing. At its center lies a stone altar, upon which rests a silver chest. But from the shadows rises the Shadow Beast, tall, horned, and wrapped in darkness.
+#
+#If you fight the Shadow Beast, go to Section 8.
+#
+#If you try to trick it and flee with the chest, go to Section 9.
+#
+#Section 8 – Final Battle
+#
+#The fight is fierce. If you took the hermit’s herb (Section 6), you strike with renewed strength and the beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!
+#
+#If you didn’t take the herb, the beast overpowers you. Darkness consumes you. The End.
+#
+#Section 9 – The Trick
+#
+#You toss your lantern high, its flame flaring bright. The beast snarls and shields its eyes. You dash to the chest, grab it, and run.
+#
