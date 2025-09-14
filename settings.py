@@ -23,3 +23,5 @@ def style_text(text, color=None, bgcolor=None, style=None):
     code_str = ";".join(map(str, codes))
     return f"\033[{code_str}m{text}\033[0m" if codes else text
 
+def H_fonts():
+    pass

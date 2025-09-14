@@ -3,7 +3,7 @@ TITLE="The Cursed Forest"
 STARTING="You are a wandering adventurer with a rusty sword, a small lantern, and a pouch with 3 gold coins. Legends speak of a cursed forest that hides a treasure guarded by something terrible. Tonight, you stand before its dark edge."
 
 levels ={
-	"1" : "At the Forest’s Edge",
+	"1" : "𝓐𝓽 𝓽𝓱𝓮 𝓕𝓸𝓻𝓮𝓼𝓽’𝓼 𝓔𝓭𝓰𝓮",
 	"2" : "The Whispering Path",
 	"3" : "The Old Hermit",
 	"4" : "Battle with the Wolf",
@@ -38,27 +38,32 @@ choices={
 }
 
 choice_outputs={
-	"1" : (2,3) 
-	"2" : (4,5) 
-	"3" : (6,2) 
-	"4" : (7) 
-	"5" : (7) 
-	"6" : (7)
-	"7" : (8,9)
-	"8" : () 
-
+	"1" : (2,3), 
+	"2" : (4,5), 
+	"3" : (6,2), 
+	"4" : (7),
+	"5" : (7),
+	"6" : (7),
+	"7" : (8,9),
+	"8" : () ,
 }
 
 ends={
-1:"The beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!"
-2:"When you finally escape the forest, you open it… only to find nothing but ashes. The curse remains unbroken. The End."
+1:"The beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!",
+2:"When you finally escape the forest, you open it… only to find nothing but ashes. The curse remains unbroken. The End.",
 3:"The beast overpowers you. Darkness consumes you. The End."	
 }
 
 def start():
 	print(STARTING)
+	print(f"{levels["1"]}\n{level_story["1"]}")
 	user=input()
 
+def level_calling():
+	i="number of level"
+
+
+start()
 
 
 
