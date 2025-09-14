@@ -27,14 +27,14 @@ level_story={
 }
 
 choices={
-	"1" : ("enter the forest","circle around the forest"),
-	"2" : ("fight the wolf","offer it a gold coin"),
-	"3" : ("accept his advice and take a healing herb","ignore him and head back into the forest"),
-	"4" : ("",""),
-	"5" : ("",""),
-	"6" : ("",""),
-	"7" : ("fight the Shadow Beast","try to trick it and flee with the chest"),
-	"8" : ("","")
+	"1" : [" 1. enter the forest","2. circle around the forest"],
+	"2" : (" 1. fight the wolf","2. offer it a gold coin"),
+	"3" : (" 1. accept his advice and take a healing herb","2. ignore him and head back into the forest"),
+	"4" : False,
+	"5" : False,
+	"6" : False,
+	"7" : (" 1. fight the Shadow Beast"," 2. try to trick it and flee with the chest"),
+	"8" : False
 }
 
 choice_outputs={
@@ -54,16 +54,10 @@ ends={
 3:"The beast overpowers you. Darkness consumes you. The End."	
 }
 
-def start():
-	print(STARTING)
-	print(f"{levels["1"]}\n{level_story["1"]}")
-	user=input()
 
 def level_calling():
 	i="number of level"
 
-
-start()
 
 
 

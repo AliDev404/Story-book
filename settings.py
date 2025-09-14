@@ -1,5 +1,5 @@
 
-def style_text(text, color=None, bgcolor=None, style=None):
+def style_text(text, color=False, bgcolor=False, style=False):
     COLORS = {
         "black": 30, "red": 31, "green": 32, "yellow": 33,
         "blue": 34, "magenta": 35, "cyan": 36, "white": 37,
@@ -25,3 +25,13 @@ def style_text(text, color=None, bgcolor=None, style=None):
 
 def H_fonts():
     pass
+
+def User_choice_level(text):
+    if text:
+        while True:
+            userInput=input(f"{style_text(text,"bright_cyan")} :")
+            if userInput=="1" or userInput=="2":
+                break
+            else:
+                print("\a!!Invalid Input!!")
+        return userInput
