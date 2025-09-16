@@ -1,6 +1,5 @@
 import story
-import settings
-
+import text
 
 def start():
 	print(f"{story.STARTING}\n\n")

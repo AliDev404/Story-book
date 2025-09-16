@@ -1,5 +1,10 @@
 TODO.TXT
 
+
+
 settings update 
 Text class
 input class
+
+
+Story endings not working 

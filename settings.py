@@ -29,9 +29,22 @@ def H_fonts():
 def User_choice_level(text):
     if text:
         while True:
-            userInput=input(f"{style_text(text,"bright_cyan")} :")
+            userInput=input(f"{style_text(text,"bright_cyan")} : ")
             if userInput=="1" or userInput=="2":
                 break
             else:
                 print("\a!!Invalid Input!!")
         return userInput
+
+
+
+def slow_print(text, delay=0.1, erase=False):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    if erase:
+        time.sleep(1)
+        sys.stdout.write('\r' + ' ' * len(text) + '\r')
+        sys.stdout.flush()
+

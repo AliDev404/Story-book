@@ -27,7 +27,7 @@ level_story={
 }
 
 choices={
-	"1" : [" 1. enter the forest","2. circle around the forest"],
+	"1" : (" 1. enter the forest","2. circle around the forest"),
 	"2" : (" 1. fight the wolf","2. offer it a gold coin"),
 	"3" : (" 1. accept his advice and take a healing herb","2. ignore him and head back into the forest"),
 	"4" : False,
@@ -46,6 +46,7 @@ choice_outputs={
 	"6" : (7),
 	"7" : (8,9),
 	"8" : () ,
+	"9" : ()
 }
 
 ends={
