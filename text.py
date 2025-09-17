@@ -2,7 +2,7 @@ import sys
 import time
 
 class TextStyler:
-    def __init__(self, default_color=None, default_bg=None, default_style=None, default_delay=1):
+    def __init__(self,  default_color=None, default_bg=None, default_style=None, default_delay=0.5):
         self.default_color = default_color
         self.default_bg = default_bg
         self.default_style = default_style
@@ -39,7 +39,7 @@ class TextStyler:
         code_str = ";".join(map(str, codes))
         return f"\033[{code_str}m{text}\033[0m" if codes else text
 
-    def slow_print(self, text, delay=1, erase=False):
+    def slow_print(self, text, delay=0.5, erase=False):
         delay = delay if delay is not None else self.default_delay
 
         for char in text:
@@ -63,3 +63,9 @@ class TextStyler:
 
     def h_fonts(self):
         pass
+    
+    def title(self,text):
+        print(f"{self.style_text(text,"bright_yellow")}\n\n")
+        
+        
+        

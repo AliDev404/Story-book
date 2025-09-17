@@ -1,25 +1,25 @@
 import story
-from text import TextStyler, user_choice_level
+from text import TextStyler
 
-def start():
-    styler = TextStyler(default_color="bright_yellow", default_style="blink")
+#def start():
+#    styler = TextStyler(default_color="bright_yellow", default_style="blink")
+#
+#    print(f"{story.STARTING}\n\n")
+#    for level in range(1, len(story.levels)):
+#        level = str(level)
+#        styler.slow_print(styler.style_text(story.levels[level])
+#        story.level_story[level]
+#        user = styler.slow_print(user_choice_level(story.choices[level]),erase=True)
+#
+#start()
 
-    styler.slow_print(story.STARTING + "\n\n")  # starting message
 
-    for level in range(1, len(story.levels)):
-        level = str(level)
 
-        # Print level title (styled + slow)
-        styler.slow_print(styler.style_text(story.levels[level]))
-
-        # Print story text (slow)
-        styler.slow_print(story.level_story[level] + "\n")
-
-        # Print choices + get user input (slow + erase previous line if wanted)
-        choice_text = "\n".join(story.choices[level])
-        styler.slow_print(choice_text, erase=False)
-
-        user = user_choice_level(story.choices[level])
-        styler.slow_print(f"You chose: {user}\n", erase=True)
-
-start()
+def start1():
+    styler = TextStyler()
+    styler.slow_print("nope",erase=True)
+    for level in range(1,len(story.levels)):
+        level=str(level)
+        styler.title(story.levels[level])
+        user= styler.user_choice_level(story.choices[level])
+start1()
