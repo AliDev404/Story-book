@@ -2,7 +2,7 @@ import sys
 import time
 
 class TextStyler:
-    def __init__(self,  default_color=None, default_bg=None, default_style=None, default_delay=0.5):
+    def __init__(self,  default_color=None, default_bg=None, default_style=None, default_delay=0):
         self.default_color = default_color
         self.default_bg = default_bg
         self.default_style = default_style
@@ -39,7 +39,7 @@ class TextStyler:
         code_str = ";".join(map(str, codes))
         return f"\033[{code_str}m{text}\033[0m" if codes else text
 
-    def slow_print(self, text, delay=0.5, erase=False):
+    def slow_print(self, text, delay=0.05, erase=False):
         delay = delay if delay is not None else self.default_delay
 
         for char in text:
@@ -52,10 +52,17 @@ class TextStyler:
             sys.stdout.flush()
 
     def user_choice_level(self, text):
+
+        
+
         if text:
             while True:
-                userInput = input(f"{self.style_text(text, 'bright_cyan')} : ")
+                print("Choose an option:")
+                for i, opt in enumerate(text, start=1):
+                    self.slow_print(f"{self.style_text(i, 'bright_cyan')}) {self.style_text(opt, 'bright_cyan')}\n", delay=None)
+                userInput = input("")
                 if userInput in ("1", "2"):
+                    self.slow_print("era",erase=True)
                     break
                 else:
                     print("\a!!Invalid Input!!")
@@ -65,7 +72,7 @@ class TextStyler:
         pass
     
     def title(self,text):
-        print(f"{self.style_text(text,"bright_yellow")}\n\n")
+        print(f"{self.style_text(text,"bright_yellow")}\n")
         
         
         

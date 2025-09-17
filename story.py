@@ -27,13 +27,13 @@ level_story={
 }
 
 choices={
-	"1" : (" 1. enter the forest","2. circle around the forest"),
-	"2" : (" 1. fight the wolf","2. offer it a gold coin"),
-	"3" : (" 1. accept his advice and take a healing herb","2. ignore him and head back into the forest"),
+	"1" : ("Enter the forest","Circle around the forest"),
+	"2" : ("Fight the wolf","Offer it a gold coin"),
+	"3" : ("Accept his advice and take a healing herb","Ignore him and head back into the forest"),
 	"4" : False,
 	"5" : False,
 	"6" : False,
-	"7" : (" 1. fight the Shadow Beast"," 2. try to trick it and flee with the chest"),
+	"7" : ("Fight the Shadow Beast","Try to trick it and flee with the chest"),
 	"8" : False
 }
 
@@ -52,7 +52,7 @@ choice_outputs={
 ends={
 1:"The beast dissolves into smoke. Inside the chest is a golden crown—the treasure is yours. Victory!",
 2:"When you finally escape the forest, you open it… only to find nothing but ashes. The curse remains unbroken. The End.",
-3:"The beast overpowers you. Darkness consumes you. The End."	
+3:"8 The beast overpowers you. Darkness consumes you. The End."	
 }
 
 
