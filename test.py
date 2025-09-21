@@ -5,7 +5,6 @@ from text import TextStyler
 
 def start():
     styler = TextStyler()
-    styler.slow_print("nope",erase=True)
     for level in range(1,len(story.levels)):
         level=str(level)
         styler.title(story.levels[level])

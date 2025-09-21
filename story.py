@@ -3,7 +3,7 @@ TITLE="The Cursed Forest"
 STARTING="You are a wandering adventurer with a rusty sword, a small lantern, and a pouch with 3 gold coins. Legends speak of a cursed forest that hides a treasure guarded by something terrible. Tonight, you stand before its dark edge."
 
 levels ={
-	"1" : "𝓐𝓽 𝓽𝓱𝓮 𝓕𝓸𝓻𝓮𝓼𝓽’𝓼 𝓔𝓭𝓰𝓮",
+	"1" : "At the Forest's Edge",
 	"2" : "The Whispering Path",
 	"3" : "The Old Hermit",
 	"4" : "Battle with the Wolf",
