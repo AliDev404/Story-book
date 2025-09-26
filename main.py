@@ -1,4 +1,4 @@
-import story
+import chapter2 as story
 from text import TextStyler
 
 
